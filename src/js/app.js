@@ -13,6 +13,13 @@ if ($('.homepage').length > 0) {
             loadPrevNextAmount: 1
         }
     });
+    $('.down-arrow').on('click', function () {
+        let nextSec = $('.who-we-are').offset().top
+        window.scrollTo({
+            top: nextSec,
+            behavior: 'smooth'
+        })
+    })
 }
 
 // Header scroll

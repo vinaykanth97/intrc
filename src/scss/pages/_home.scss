@@ -1,7 +1,6 @@
 .homepage {
     .dotted-carousel {
         position: relative;
-
         .swiper-slide {
             height: 90vh;
             background-size: cover;
@@ -14,12 +13,8 @@
                 max-width: 50%;
                 width: 100%;
 
-                h1 {
-                    margin-bottom: 0.3em;
-                }
-
                 p {
-                    margin-bottom: 1em;
+                    margin-bottom: 3.2rem;
                 }
             }
 
@@ -61,15 +56,16 @@
 
             svg {
                 cursor: pointer;
-                width: 1em;
-                height: 3.625em;
+                width: 1.6rem;
+                height: 5.8rem;
             }
         }
     }
-    .who-we-are{
-        .main-title{
-            p{
-                margin-bottom:3em;
+
+    .who-we-are {
+        .main-title {
+            p {
+                margin-bottom: 7.2rem;
             }
         }
     }

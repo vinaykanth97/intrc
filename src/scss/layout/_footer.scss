@@ -4,21 +4,21 @@ footer {
         flex-wrap: wrap;
 
         h3 {
-            margin-bottom: 0.55em;
+            margin-bottom: 1rem;
         }
 
         h4 {
-            margin-bottom: 1em;
+            margin-bottom: 1.6rem;
         }
 
         .foo {
             &-info {
                 flex-basis: 35%;
-                margin-right: 3em;
+                margin-right: 11.2rem;
             }
 
             &-sec {
-                flex: 1 0 calc((100% - 35% - 3em) / 3);
+                flex: 1 0 calc((100% - 35% - 11.2rem) / 3);
             }
         }
     }
@@ -27,5 +27,5 @@ footer {
 
 .copyrights {
     background: $colorType1;
-    padding: 2em 0;
+    padding: 3rem 0;
 }
