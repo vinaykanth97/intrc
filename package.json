@@ -1,7 +1,7 @@
 {
-  "name": "gulpwebstarter",
+  "name": "gulpflow",
   "version": "1.0.0",
-  "description": "Gulp Web Starter - for starting optimized HTML5 template development",
+  "description": "A simple gulp flow",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
