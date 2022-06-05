@@ -115,7 +115,7 @@ function app_styles() {
 function images_optimized() {
   return src(paths.images_optimized.src)
     .pipe(newer(paths.images_optimized.dest))
-    .pipe(dest(outputDir + "/images/src"))
+    .pipe(dest(outputDir + "/images/"))
     .pipe(imagemin())
     .pipe(dest(paths.images_optimized.dest));
 }
