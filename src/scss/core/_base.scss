@@ -1,0 +1,24 @@
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.wrapper {
+  max-width: 71.25em;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 0.938em;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}

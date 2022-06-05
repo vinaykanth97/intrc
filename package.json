@@ -1,0 +1,32 @@
+{
+  "name": "gulpwebstarter",
+  "version": "1.0.0",
+  "description": "Gulp Web Starter - for starting optimized HTML5 template development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinay",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rsync": "0.0.8",
+    "gulp-uglify-es": "^2.0.0",
+    "jquery": "^3.4.1",
+    "sass": "^1.49.0",
+    "vanilla-lazyload": "^15.1.1"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

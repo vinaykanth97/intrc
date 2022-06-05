@@ -1,0 +1,31 @@
+// Tablet Sizes
+$tabletmax: 1024px;
+$tabletmin: 991px;
+
+// Mobile Sizes
+$mobilemax: 767px;
+$mobilemin: 400px;
+
+@mixin tabletmin {
+  @media (max-width: $tabletmin) {
+    @content;
+  }
+}
+
+@mixin tabletmax {
+  @media (max-width: $tabletmax) {
+    @content;
+  }
+}
+
+@mixin mobilemax {
+  @media (max-width: $mobilemax) {
+    @content;
+  }
+}
+
+@mixin mobilemin {
+  @media (max-width: $mobilemin) {
+    @content;
+  }
+}
