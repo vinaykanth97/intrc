@@ -4,6 +4,10 @@ ul {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapper {
   max-width: 114rem;
   margin: 0 auto;
@@ -25,4 +29,11 @@ ul {
 
 .section-space {
   padding: $section-spacing;
+}
+
+.para-space {
+  margin-bottom: 7.2rem;
+}
+.swiper-pagination-bullet-active{
+  background-color: #000;
 }

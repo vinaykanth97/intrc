@@ -1,0 +1,37 @@
+.testimonials {
+    background-color: #F1F1F1;
+
+    .testimonial-box {
+        box-shadow: 8px 16px 32px rgba(0, 0, 0, 0.08);
+
+        blockquote {
+            background: #F1F1F1;
+            padding: 5.7rem 3.2rem;
+            transition: 0.3s all ease;
+        }
+
+        .info {
+            padding: 3.2rem;
+            align-items: center;
+
+            figure {
+                margin-right: 2.4rem;
+                background: #ccc;
+                width: 6.4rem;
+                height: 6.4rem;
+
+            }
+        }
+        &:hover{
+            blockquote{
+                background: $primaryColor;
+                color: #fff;
+            }
+        }
+    }
+
+
+
+
+
+}

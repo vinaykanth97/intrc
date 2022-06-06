@@ -5,9 +5,11 @@ header {
     width: 100%;
     z-index: 22;
     transition: 0.3s all ease;
-    &.active{
-        background: #fff;
+
+    &.active {
+        background: #000;
     }
+
     .header-box {
         display: flex;
         justify-content: space-between;
@@ -21,6 +23,7 @@ header {
         p {
             font-weight: 600;
             cursor: pointer;
+            color: #fff;
         }
     }
 
@@ -37,17 +40,17 @@ header {
                 margin-right: 5.6rem;
 
                 a {
-                    color: $textColor;
+                    color: rgb(255 255 255 / 50%);
                     transition: 0.3s all ease;
 
                     &:hover {
-                        color: $primaryColor;
+                        color: #fff;
                     }
                 }
 
                 &.active {
                     a {
-                        color: $primaryColor;
+                        color: #fff;
                     }
 
                 }

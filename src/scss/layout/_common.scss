@@ -1,0 +1,30 @@
+.common-slider-arrows {
+    justify-content: flex-end;
+
+    .swiper-arrows {
+        margin-right: 3rem;
+        line-height: 1;
+        cursor: pointer;
+
+        img {
+            width: 3.2rem;
+        }
+    }
+
+    .swiper-button-disabled {
+        pointer-events: none;
+        opacity: 0.7;
+    }
+}
+
+.custom-slider {
+    .swiper-wrapper {
+        padding-bottom: 7.2rem;
+    }
+
+    .swiper-pagination {
+        text-align: left;
+        bottom: 0;
+        width: auto;
+    }
+}

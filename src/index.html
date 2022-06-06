@@ -75,7 +75,7 @@
         <svg width="16" height="58" viewBox="0 0 16 58" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M9 1C9 0.447715 8.55228 -2.41411e-08 8 0C7.44772 2.41411e-08 7 0.447715 7 1L9 1ZM7.2929 57.7071C7.68342 58.0976 8.31658 58.0976 8.70711 57.7071L15.0711 51.3431C15.4616 50.9526 15.4616 50.3195 15.0711 49.9289C14.6805 49.5384 14.0474 49.5384 13.6569 49.9289L8 55.5858L2.34315 49.9289C1.95262 49.5384 1.31946 49.5384 0.928934 49.9289C0.53841 50.3195 0.53841 50.9526 0.928934 51.3431L7.2929 57.7071ZM7 1L7 57L9 57L9 1L7 1Z"
-            fill="black" />
+            fill="#fff" />
         </svg>
       </div>
     </div>
@@ -87,24 +87,80 @@
     <div class="wrapper">
       <div class="main-title">
         <h2>Who we are</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+          been the
           industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
           make
           a
           type specimen book. </p>
-        <a href="javascript:void(0)" class="primary-btn">Schedule Call</a>
+        <a href="javascript:void(0)" class="primary-btn modified">Schedule Call</a>
       </div>
+    </div>
+  </section>
+  <!--  -->
 
+  <!-- Why Choose us -->
+  @@include('./templates/single-dual-tiled.html')
+  <!--  -->
+
+  <!-- What we do -->
+  <section class="section-space what-we-do">
+    <div class="wrapper">
+      <h2>What we do</h2>
+      <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. </p>
+      <a href="javascript:void(0)" class="primary-btn modified">To know more about service</a>
+      <div class="three-tiled-flex flex">
+        <!-- @@include('./templates/three-tiled.html') -->
+        @@loop('./templates/three-tiled.html', "./templates/data-home-three-tiled.json")
+      </div>
     </div>
 
-
   </section>
+  <!--  -->
+  <!-- Testimonials -->
+  <section class="section-space testimonials">
+    <div class="wrapper">
+      <h2>Testimonial</h2>
+      <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a
+        type specimen book. </p>
+      <div class="swiper testimonials custom-slider">
+        <div class="swiper-wrapper swipe-spacing">
+          @@loop('./templates/testimonials.html', "./templates/testimonials-home-data.json")
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="flex common-slider-arrows">
+          <div class="swiper-button-prev-unique swiper-arrows"><img src="./images/left-arrow.png" alt="left arrow">
+          </div>
+          <div class="swiper-button-next-unique swiper-arrows"><img src="./images/right-arrow.png" alt="right arrow">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--  -->
+
+  <!-- Amazing client & partner -->
+  @@include('./templates/client-partner.html')
+  <!--  -->
+
+  <!-- Contact us -->
+  @@include('./templates/contact-form.html')
   <!--  -->
 
   <!-- Footer -->
   @@include('./templates/footer.html')
   <!--  -->
+
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

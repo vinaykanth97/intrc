@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTRC Consultants | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.2/swiper-bundle.css"
+        integrity="sha512-VbPb+KrNIjcE5nM/Y+ZBvKvQF7+B/alQCQLPdIUAP3KsmDWkv0EdiyX4gfTwtJ3Sfais/nGJ0whTxjSwhQ1C8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Style Sheet -->
+    <link href="css/style.min.css" rel="stylesheet" />
+</head>
+
+<body class="homepage">
+    <!-- Header -->
+    @@include('./templates/header.html',{
+    "page": "aboutus"
+    })
+    <!--  -->
+
+
+    <!-- What we do -->
+    <section class="section-space what-we-do">
+        <div class="wrapper">
+            <h2>What we do</h2>
+            <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has
+                been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make
+                a type specimen book. </p>
+            <a href="javascript:void(0)" class="primary-btn modified">To know more about service</a>
+            <div class="three-tiled-flex flex">
+                <!-- @@include('./templates/three-tiled.html') -->
+                @@loop('./templates/three-tiled.html', "./templates/data-home-three-tiled.json")
+            </div>
+        </div>
+
+    </section>
+    <!--  -->
+    <!-- Testimonials -->
+    <section class="section-space testimonials">
+        <div class="wrapper">
+            <h2>Testimonial</h2>
+            <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has
+                been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make
+                a
+                type specimen book. </p>
+            <div class="swiper testimonials custom-slider">
+                <div class="swiper-wrapper swipe-spacing">
+                    @@loop('./templates/testimonials.html', "./templates/testimonials-home-data.json")
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="flex common-slider-arrows">
+                    <div class="swiper-button-prev-unique swiper-arrows"><img src="./images/left-arrow.png"
+                            alt="left arrow">
+                    </div>
+                    <div class="swiper-button-next-unique swiper-arrows"><img src="./images/right-arrow.png"
+                            alt="right arrow">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!-- Amazing client & partner -->
+    @@include('./templates/client-partner.html')
+    <!--  -->
+
+    <!-- Contact us -->
+    @@include('./templates/contact-form.html')
+    <!--  -->
+
+    <!-- Footer -->
+    @@include('./templates/footer.html')
+    <!--  -->
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.2/swiper-bundle.min.js"
+        integrity="sha512-EWat0/wkEZtE7OENhG700T+jmrpHStGS7CqHUAzKW5MzNnVEa9Wfb+zJjF4hoXSgMTWlixL5Fgqhjx5PAliaXw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
