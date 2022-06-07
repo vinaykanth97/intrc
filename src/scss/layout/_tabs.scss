@@ -1,0 +1,46 @@
+.tab-items {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    margin-bottom: 10.4rem;
+
+    ul {
+        max-width: 70%;
+        justify-content: space-between;
+    }
+
+    li {
+        &.active {
+            a {
+                border-bottom: 3px solid #FFFFFF;
+            }
+        }
+
+        a {
+            color: #fff;
+            padding-bottom: 2.4rem;
+            display: inline-block;
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.tab-content {
+    &>.content.show {
+        display: block;
+        animation: showTab 2s forwards;
+
+        @keyframes showTab {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    }
+
+    &>.content {
+        display: none;
+        color: #fff;
+    }
+}

@@ -1,0 +1,37 @@
+.faq-boxes {
+    padding: 4.8rem 9.6rem;
+    box-shadow: 8px 16px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 1px;
+    margin-bottom: 3.2rem;
+    cursor: pointer;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .question-box {
+        position: relative;
+        
+        p {
+            font-weight: 500;
+            max-width: 80%;
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            height: 5.0rem;
+            
+            width: 5.0rem;
+            background: $primaryColor;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+
+    .answer {
+        margin-top: 1.6rem;
+        display: none;
+    }
+}

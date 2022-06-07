@@ -26,6 +26,18 @@ if ($('.homepage').length > 0) {
             clickable: true,
         },
     });
+    ClientSwiper()
+    ScrollToDown('.down-arrow', '.who-we-are')
+}
+if ($('.aboutus').length > 0) {
+    ClientSwiper()
+    ScrollToDown('.down-arrow', '.our-mission')
+}
+if ($('.services').length > 0) {
+    ScrollToDown('.down-arrow', '.headline-para')
+    FaqAnswers()
+}
+function ClientSwiper() {
     new Swiper(".client-partner-slider", {
         slidesPerView: 3,
         spaceBetween: 16,
@@ -38,9 +50,7 @@ if ($('.homepage').length > 0) {
             clickable: true,
         },
     });
-    ScrollToDown('.down-arrow', '.who-we-are')
 }
-
 function ScrollToDown(element, downElement) {
     $(element).on('click', function () {
         let nextSec = $(downElement).offset().top - $('header').height()
@@ -48,6 +58,27 @@ function ScrollToDown(element, downElement) {
             top: nextSec,
             behavior: 'smooth'
         })
+    })
+}
+
+// Tabs
+
+function SelectTabs() {
+    $('.tab-items a').on('click', function () {
+        $('.tab-items li').removeClass('active')
+        $(this).parent().addClass('active')
+        $(`.tab-content > .content`).removeClass('show')
+        let clickedData = $(this).parent().data('id')
+        $(`.tab-content > .content[data-id=${clickedData}]`).addClass('show')
+    })
+}
+SelectTabs()
+// Faqs
+function FaqAnswers() {
+    $('.question-box').on('click', function () {
+        let currentQuestionDataId = $(this).data('target')
+        $(this).toggleClass('active')
+        $(`.answer[data-target=${currentQuestionDataId}]`).slideToggle()
     })
 }
 

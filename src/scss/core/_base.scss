@@ -19,6 +19,12 @@ img {
   display: flex;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+.primary-bg{
+  background-color: $primaryColor;
+}
 .align-center {
   align-items: center;
 }
@@ -34,6 +40,13 @@ img {
 .para-space {
   margin-bottom: 7.2rem;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
   background-color: #000;
+}
+.grey-bg{
+  background: $colorType1;
+}
+.white-bg{
+  background: #fff;
 }

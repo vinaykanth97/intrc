@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
+        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "data-id": "faq-1"
+    },
+    {
+        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
+        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "data-id": "faq-2"
+    },
+    {
+        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
+        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "data-id": "faq-3"
+    },
+    {
+        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
+        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "data-id": "faq-4"
+    }
+]
