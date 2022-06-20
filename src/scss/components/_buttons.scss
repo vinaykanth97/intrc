@@ -1,28 +1,29 @@
 .primary-btn {
+    font-weight: 500;
     display: inline-flex;
     padding: 1.2rem 3.2rem;
     background: transparent;
     border: 1px solid #fff;
-    font-weight: 400;
     line-height: normal;
     transition: 0.3s all ease;
     color: #fff;
 
     &.modified {
-        border: 1px solid #000;
+        border: 1px solid $accentColor;
         color: #000;
 
         &:hover {
-            background: #000;
+            background: $accentColor;
             color: #fff;
         }
     }
 
     &:hover {
-        background: #fff;
-        color: #000;
+        background: $accentColor;
+        color: #fff;
         border-color: transparent;
     }
+   
 }
 
 .exp-more {

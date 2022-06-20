@@ -3,6 +3,7 @@ if ($('.homepage').length > 0) {
     new Swiper(".hero-carousel", {
         slidesPerView: 1,
         effect: "fade",
+        autoplay: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -25,9 +26,18 @@ if ($('.homepage').length > 0) {
             el: ".swiper-pagination",
             clickable: true,
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 16
+            }, 1024: {
+                slidesPerView: 3,
+                spaceBetween: 16
+            }
+        }
     });
     ClientSwiper()
-    ScrollToDown('.down-arrow', '.who-we-are')
+    ScrollToDown('.down-arrow svg', '.who-we-are')
 }
 if ($('.aboutus').length > 0) {
     ClientSwiper()
@@ -35,6 +45,10 @@ if ($('.aboutus').length > 0) {
 }
 if ($('.services').length > 0) {
     ScrollToDown('.down-arrow', '.headline-para')
+    FaqAnswers()
+}
+if ($('.services-inner').length > 0) {
+    ScrollToDown('.down-arrow', '.tab-sec')
     FaqAnswers()
 }
 function ClientSwiper() {
@@ -62,7 +76,6 @@ function ScrollToDown(element, downElement) {
 }
 
 // Tabs
-
 function SelectTabs() {
     $('.tab-items a').on('click', function () {
         $('.tab-items li').removeClass('active')
@@ -90,4 +103,16 @@ function ScrollActiveHeader() {
 ScrollActiveHeader()
 window.addEventListener('scroll', () => {
     ScrollActiveHeader()
+})
+
+// Header burgerMenu
+$(".burger2").on('click', function () {
+    $(".burger2").toggleClass("open");
+    $('.header-box nav').toggleClass('show-nav')
+})
+
+// Sub-menus{}
+$('.client-portal').on('click', function () {
+    $('.submenu').slideToggle()
+    $(this).toggleClass('rotate')
 })

@@ -3,6 +3,11 @@ footer {
     .footer-wrap {
         flex-wrap: wrap;
 
+        @include mobilemax {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
         h3 {
             margin-bottom: 1rem;
         }
@@ -15,10 +20,44 @@ footer {
             &-info {
                 flex-basis: 35%;
                 margin-right: 11.2rem;
+
+                img {
+                    width: 18.4rem;
+
+                }
+
+                @include tabletmin {
+                    margin: 0 0 3rem 0;
+                    flex-basis: 100%;
+                }
             }
 
             &-sec {
                 flex: 1 0 calc((100% - 35% - 11.2rem) / 3);
+
+                ul {
+                    justify-content: space-between;
+
+                    @include tabletmin {
+                        justify-content: flex-start;
+
+                        li {
+                            img {
+                                margin: 0 2rem 0 0;
+                            }
+
+                        }
+                    }
+                }
+
+                @include tabletmin {
+                    margin: 0 0 3rem 0;
+                    flex-basis: 50%;
+
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                }
             }
         }
     }

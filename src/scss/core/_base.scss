@@ -13,18 +13,28 @@ img {
   margin: 0 auto;
   width: 100%;
   padding: 0 1.5rem;
+
+  @include tabletmin {
+    max-width: 100%;
+  }
 }
 
 .flex {
   display: flex;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
-.primary-bg{
+
+.primary-bg {
   background-color: $primaryColor;
 }
+
 .align-center {
   align-items: center;
 }
@@ -41,12 +51,31 @@ img {
   margin-bottom: 7.2rem;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #000;
+.swiper-pagination-bullet {
+  background: rgba($color: $accentColor, $alpha: 0.32);
+  opacity: 1;
 }
-.grey-bg{
+
+.swiper-pagination-bullet-active {
+  background-color: $accentColor;
+}
+
+
+
+.grey-bg {
   background: $colorType1;
 }
-.white-bg{
+
+.white-bg {
   background: #fff;
+}
+
+.mt-104 {
+  margin: 10.4rem 0 0 0;
+}
+
+@include tabletmin {
+  .flex-mob-column {
+    flex-direction: column;
+  }
 }

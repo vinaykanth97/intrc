@@ -30,6 +30,20 @@
 }
 
 .double-column {
+    &.xl{
+        .content {
+            flex-basis: 60%;
+            color: #fff;
+        }
+        figure {
+            flex-basis: 40%;
+        }
+    }
+    .dark{
+        .content{
+            color: #fff;
+        }
+    }
     .content {
         flex-basis: 35%;
         margin-right: 5rem;
@@ -37,19 +51,22 @@
 
     figure {
         flex-basis: 65%;
+
+        img {
+            width: 100%;
+        }
     }
 
- 
-        .content {
-            color: #fff;
-        }
-
-        .reverse {
-            .content {
-                margin-left: 5rem;
-            }
-        }
 
   
+
+    .reverse {
+        .content {
+            margin-left: 5rem;
+            margin-right: 0;
+        }
+    }
+
+
 
 }

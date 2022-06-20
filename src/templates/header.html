@@ -1,10 +1,13 @@
 <header>
     <div class="wrapper">
         <div class="header-box">
-            <figure>
-                <p>INTRC</p>
+            <figure class="logo">
+                <a href="/">
+                    <img src="./images/intrc-logo.svg" alt="INTRC">
+                </a>
             </figure>
             <nav>
+
                 <ul>
                     <li class="@@if (context.page === 'home') {active}"><a href="/">Home</a></li>
                     <li class="@@if (context.page === 'about') {active}"><a href="about-us.html">About</a></li>
@@ -12,9 +15,18 @@
                     </li>
                     <li class="@@if (context.page === 'contactus') {active}"><a href="contact-us.html">Contact</a>
                     </li>
+                    <li class="client-portal"><a href="javascript:void(0)">Client Portal</a>
+                        <ul class="submenu">
+                            <li><a href="javascript:void(0)">Login</a></li>
+                            <li><a href="javascript:void(0)">Payment</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <a href="javascript:void(0)" class="primary-btn">Schedule Call</a>
             </nav>
+            <div class="burger2 menu">
+                <div class="icon"></div>
+            </div>
         </div>
 
     </div>

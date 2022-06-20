@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>INTRC Consultants | Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.2/swiper-bundle.css"
     integrity="sha512-VbPb+KrNIjcE5nM/Y+ZBvKvQF7+B/alQCQLPdIUAP3KsmDWkv0EdiyX4gfTwtJ3Sfais/nGJ0whTxjSwhQ1C8g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,51 +26,30 @@
     <div class="swiper hero-carousel">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-lazy" data-background="./images/banner-1.jpg">
-          <div class="wrapper">
-            <div class="slider-content">
-              <h1>Lorem Ipsum is
-                simply dummy.</h1>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</p>
-              <a href="javascript:void(0)" class="primary-btn">Schedule Call</a>
-            </div>
-          </div>
+
         </div>
         <div class="swiper-slide swiper-lazy" data-background="./images/banner-2.jpg">
-          <div class="wrapper">
-            <div class="slider-content">
-              <h1>Lorem Ipsum is
-                simply dummy.</h1>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</p>
-              <a href="javascript:void(0)" class="primary-btn">Schedule Call</a>
-            </div>
-          </div>
+        
         </div>
         <div class="swiper-slide swiper-lazy" data-background="./images/banner-3.jpg">
-          <div class="wrapper">
-            <div class="slider-content">
-              <h1>Lorem Ipsum is
-                simply dummy.</h1>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</p>
-              <a href="javascript:void(0)" class="primary-btn">Schedule Call</a>
-            </div>
-          </div>
+
         </div>
         <div class="swiper-slide swiper-lazy" data-background="./images/banner-4.jpg">
-          <div class="wrapper">
-            <div class="slider-content">
-              <h1>Lorem Ipsum is
-                simply dummy.</h1>
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</p>
-              <a href="javascript:void(0)" class="primary-btn">Schedule Call</a>
-            </div>
-          </div>
+
         </div>
       </div>
       <div class="swiper-pagination wrapper"></div>
+      <div class="content-position">
+        <div class="wrapper">
+          <div class="slider-content">
+            <h1>Expanding
+              Possibilities</h1>
+            <p> INTRC Consultants LLC is a global leader in seizing the most incredible opportunities for businesses across the world and democratising the entrepreneur ecosystem.</p>
+            <a href="javascript:void(0)" class="primary-btn">Schedule Call</a>
+          </div>
+        </div>
+      </div>
+
       <div class="down-arrow wrapper">
         <svg width="16" height="58" viewBox="0 0 16 58" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -87,14 +66,8 @@
     <div class="wrapper">
       <div class="main-title">
         <h2>Who we are</h2>
-        <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-          been the
-          industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make
-          a
-          type specimen book. </p>
-        <a href="javascript:void(0)" class="primary-btn modified">Schedule Call</a>
+        <p class="para-space">INTRC Consultants LLC is on a mission to provide every business leader and entrepreneur with tools and solutions to build a global customer base while enhancing global presence with confidence.</p>
+        <a href="javascript:void(0)" class="primary-btn modified">To know more about us</a>
       </div>
     </div>
   </section>
@@ -110,13 +83,9 @@
   <section class="section-space what-we-do">
     <div class="wrapper">
       <h2>What we do</h2>
-      <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. </p>
+      <p class="para-space">We empower you to understand things from a new perspective, discover opportunities you might not have considered, and achieve objectives that serve as a bridge between what is and what could be. </p>
       <a href="javascript:void(0)" class="primary-btn modified">To know more about service</a>
       <div class="three-tiled-flex flex">
-        <!-- @@include('./templates/three-tiled.html') -->
         @@loop('./templates/three-tiled.html', "./templates/data-home-three-tiled.json")
       </div>
     </div>

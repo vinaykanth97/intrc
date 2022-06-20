@@ -13,6 +13,13 @@ html {
         font-size: 100%;
     }
 
+    @include tabletmin {
+        font-size: 90%;
+    }
+
+    @include mobilemax {
+        font-size: 53%;
+    }
 }
 
 body {
@@ -20,7 +27,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.9;
-    color: $primaryColor;
+    color: #000;
 }
 
 h1 {
@@ -46,6 +53,14 @@ h4 {
     font-size: 2.4rem;
     font-weight: 300;
     line-height: 2.9rem;
+}
+
+h5 {
+    font-size: 2.0rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: $accentColor;
+    margin-bottom: 1.2rem;
 }
 
 a {

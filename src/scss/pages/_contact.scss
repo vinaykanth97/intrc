@@ -1,14 +1,33 @@
 .contact-form {
+    background: linear-gradient(90deg, $primaryColor 50%, #F1F1F1 50%);
+
+    @include tabletmin {
+        background: none;
+        padding: 0;
+        .wrapper {
+            padding: 0;
+        }
+    }
+
     .about-contact {
-        flex-basis: 50%;
+        flex: 1;
         color: #fff;
-        padding: 0 12rem 0 0;
+        background-color: $primaryColor;
+
+        @include tabletmin {
+            flex-basis: 100%;
+            padding: 10.4rem 2rem;
+        }
 
         .contact-cred {
             margin-top: 16.9rem;
-            p{
+
+
+
+            p {
                 margin-bottom: 1.6rem;
             }
+
             h4 {
                 margin-bottom: 4rem;
 
@@ -24,8 +43,13 @@
     }
 
     .contact-field {
-        flex-basis: 50%;
+        flex: 1;
         padding: 0 0 0 12rem;
+
+        @include tabletmin {
+            background-color: #F1F1F1;
+            padding: 10.4rem 2rem;
+        }
 
         input,
         textarea {
