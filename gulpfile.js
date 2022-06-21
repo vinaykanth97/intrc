@@ -175,8 +175,6 @@ exports.build = parallel(
   php_files,
   html_files,
   fonts,
-  browsersync,
-  startwatch,
 );
 
 exports.browsersync = browsersync;
