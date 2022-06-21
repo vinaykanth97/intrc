@@ -205,5 +205,4 @@ exports.default = parallel(
   fonts,
   browsersync,
   startwatch,
-  series(clean, build)
 );
