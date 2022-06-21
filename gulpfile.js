@@ -83,7 +83,7 @@ function browsersync() {
 }
 
 // Use js bundle if needed
-function lib_scripts() {
+async function lib_scripts() {
   //   return src(paths.lib_scripts.src)
   //     // .pipe(concat(paths.jsLibsOutputName))
   //     .pipe(uglify())
