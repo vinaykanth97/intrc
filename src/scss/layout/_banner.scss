@@ -24,9 +24,28 @@
         z-index: 23;
         position: relative;
         color: #fff;
+        @include tabletmin{
+            max-width: 100%;
+        }
         svg {
             margin-top: 7.4rem;
             cursor: pointer;
+            animation: inf-arrow 2s ease-in-out infinite;
+            @keyframes inf-arrow {
+                0% {
+                    transform: translate(0, -1.5rem);
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: translate(0, 1.5rem);
+                    opacity: 0;
+                }
+            }
         }
     }
 }

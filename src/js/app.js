@@ -1,20 +1,6 @@
-
+let windowWidth = $(window).width()
 if ($('.homepage').length > 0) {
-    new Swiper(".hero-carousel", {
-        slidesPerView: 1,
-        effect: "fade",
-        autoplay: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        preloadImages: true,
-        lazyLoading: true,
-        lazy: {
-            loadPrevNext: true,
-            loadPrevNextAmount: 1
-        }
-    });
+    BannerCarousel()
     new Swiper(".testimonials", {
         slidesPerView: 3,
         spaceBetween: 16,
@@ -41,19 +27,23 @@ if ($('.homepage').length > 0) {
 }
 if ($('.aboutus').length > 0) {
     ClientSwiper()
-    ScrollToDown('.down-arrow', '.our-mission')
+    ScrollToDown('.down-arrow svg', '.our-mission')
 }
 if ($('.services').length > 0) {
-    ScrollToDown('.down-arrow', '.headline-para')
+    ScrollToDown('.down-arrow svg', '.headline-para')
     FaqAnswers()
+    SelectTabs()
+    BannerCarousel()
 }
 if ($('.services-inner').length > 0) {
-    ScrollToDown('.down-arrow', '.tab-sec')
+    ScrollToDown('.down-arrow svg', '.tab-sec')
     FaqAnswers()
+    SelectTabs()
+    BannerCarousel()
 }
 function ClientSwiper() {
     new Swiper(".client-partner-slider", {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 16,
         navigation: {
             nextEl: '.swiper-button-next-unique',
@@ -63,6 +53,24 @@ function ClientSwiper() {
             el: ".swiper-pagination",
             clickable: true,
         },
+    });
+}
+
+function BannerCarousel() {
+    new Swiper(".hero-carousel", {
+        slidesPerView: 1,
+        effect: "fade",
+        autoplay: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        preloadImages: true,
+        lazyLoading: true,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 1
+        }
     });
 }
 function ScrollToDown(element, downElement) {
@@ -85,7 +93,7 @@ function SelectTabs() {
         $(`.tab-content > .content[data-id=${clickedData}]`).addClass('show')
     })
 }
-SelectTabs()
+
 // Faqs
 function FaqAnswers() {
     $('.question-box').on('click', function () {
@@ -98,7 +106,7 @@ function FaqAnswers() {
 // Header scroll
 function ScrollActiveHeader() {
     let header = document.querySelector('header')
-    window.pageYOffset > 100 ? header.classList.add('active') : header.classList.remove('active')
+    window.pageYOffset > 10 ? header.classList.add('active') : header.classList.remove('active')
 }
 ScrollActiveHeader()
 window.addEventListener('scroll', () => {
@@ -111,8 +119,17 @@ $(".burger2").on('click', function () {
     $('.header-box nav').toggleClass('show-nav')
 })
 
-// Sub-menus{}
-$('.client-portal').on('click', function () {
-    $('.submenu').slideToggle()
-    $(this).toggleClass('rotate')
-})
+// Sub-menus
+if (windowWidth <= 991) {
+    $('.client-portal').on('click', function () {
+        $('.submenu').slideToggle()
+        $(this).toggleClass('rotate')
+    })
+}
+
+// Current Year copyRight
+(function () {
+    let getDate = new Date()
+    let currentYear = getDate.getFullYear()
+    $('.copyrights p .current-year').text(currentYear)
+})();

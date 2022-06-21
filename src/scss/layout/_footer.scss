@@ -16,6 +16,12 @@ footer {
             margin-bottom: 1.6rem;
         }
 
+        li {
+            a {
+                color: #000;
+            }
+        }
+
         .foo {
             &-info {
                 flex-basis: 35%;
@@ -23,7 +29,7 @@ footer {
 
                 img {
                     width: 18.4rem;
-
+                    margin: 0 0 1.5rem;
                 }
 
                 @include tabletmin {

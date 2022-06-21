@@ -1,0 +1,11 @@
+.services{
+    .tab-items{
+        ul{
+            max-width: 45%;
+            @include tabletmin{
+                max-width: 100%;
+            }
+        }
+       
+    }
+}

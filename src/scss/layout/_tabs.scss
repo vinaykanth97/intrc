@@ -5,9 +5,15 @@
     ul {
         max-width: 70%;
         justify-content: space-between;
+        @include tabletmin{
+          text-align: center;
+        }
     }
 
     li {
+        @include tabletmin{
+            margin: 0 0 2rem 0;
+        }
         &.active {
             a {
                 border-bottom: 3px solid #FFFFFF;

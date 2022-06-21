@@ -4,13 +4,16 @@
     border-radius: 1px;
     margin-bottom: 3.2rem;
     cursor: pointer;
+    @include tabletmin{
+        padding: 2rem;
+    }
     &:last-of-type {
         margin-bottom: 0;
     }
 
     .question-box {
         position: relative;
-        
+
         p {
             font-weight: 500;
             max-width: 80%;
@@ -20,13 +23,23 @@
         &::after {
             content: "";
             height: 5.0rem;
-            
+            background-image: url(../images/plus.png);
+            background-repeat: no-repeat;
             width: 5.0rem;
-            background: $primaryColor;
+            background-color: $primaryColor;
             position: absolute;
             right: 0;
             top: 50%;
             transform: translate(0, -50%);
+            background-size: 2.4rem;
+            background-position: center;
+            transition: 0.2s all ease;
+        }
+
+        &.active {
+            &::after {
+                background-image: url(../images/minus-sign.png);
+            }
         }
     }
 
