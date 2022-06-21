@@ -159,6 +159,26 @@ function startwatch() {
     app_scripts
   );
 }
+function clean(cb) {
+  cb();
+}
+function build(cb) {
+  cb();
+  
+}
+
+exports.build = parallel(
+  images_optimized,
+  lib_scripts,
+  app_styles,
+  app_scripts,
+  php_files,
+  html_files,
+  fonts,
+  browsersync,
+  startwatch,
+  series(clean, build)
+);
 
 exports.browsersync = browsersync;
 exports.assets = series(
@@ -187,5 +207,6 @@ exports.default = parallel(
   html_files,
   fonts,
   browsersync,
-  startwatch
+  startwatch,
+  series(clean, build)
 );
