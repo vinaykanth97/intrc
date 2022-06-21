@@ -177,7 +177,6 @@ exports.build = parallel(
   fonts,
   browsersync,
   startwatch,
-  series(clean, build)
 );
 
 exports.browsersync = browsersync;
