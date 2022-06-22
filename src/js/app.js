@@ -27,7 +27,7 @@ if ($('.homepage').length > 0) {
 }
 if ($('.aboutus').length > 0) {
     ClientSwiper()
-    ScrollToDown('.down-arrow svg', '.our-mission')
+    ScrollToDown('svg.down-arrow', '.our-mission')
 }
 if ($('.services').length > 0) {
     ScrollToDown('.down-arrow svg', '.headline-para')

@@ -1,264 +1,321 @@
 header {
-    padding: 2.7rem 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-    transition: 0.3s all ease;
+  padding: 2.7rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: 0.3s all ease;
 
-    &.active {
-        background: #000;
-    }
-
-    .header-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
-
+  &.active {
+    background: #fff;
+    box-shadow: 1px 1px 2px #00000015;
     figure {
-        &.logo {
-            img {
-                width: 9.6rem;
-                height: 3.8rem;
-            }
+      &.logo {
+        a {
+          background-image: url(../images/intrc-logo.svg);
         }
-
-        flex-basis: 30%;
-        line-height: 1;
-
-        p {
-            font-weight: 600;
-            cursor: pointer;
-            color: #fff;
-        }
+      }
     }
-
     nav {
-        flex-basis: 70%;
-        display: flex;
-        justify-content: flex-end;
-
-        @include tabletmin {
-            position: fixed;
-            right: -100%;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            flex-direction: column;
-            top: 0;
-            justify-content: flex-start;
-            padding: 10rem 1.2rem 0 1.2rem;
-            transition: 1s right ease;
-
-            ul {
-                flex-direction: column;
-
-                &>li {
-                    margin: 0 !important;
-                    width: 100%;
-                    text-align: left;
-
-                    &.client-portal {
-                        &>a {
-                            &::after {
-                                right: 2rem !important;
-
-                            }
-                        }
-                    }
-
-                    a {
-                        padding: 2rem;
-                        display: block;
-                    }
-                }
-            }
-
-            .primary-btn {
-                align-self: center;
-                margin-top: 4rem;
-            }
-
-            &.show-nav {
-                display: flex;
-                right: 0%;
-            }
-        }
-
-        ul:not(.submenu) {
-            display: flex;
-            align-items: center;
-
-            &>li {
-                margin-right: 5.6rem;
-                position: relative;
-
-                &.client-portal {
-                    &>a {
-                        position: relative;
-
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            width: 2rem;
-                            height: 2rem;
-                            right: -2rem;
-                            background: url(../images/downward-arrow.png) no-repeat;
-                            background-position: right center;
-                            background-size: cover;
-                            transform: translateY(-50%) rotate(0deg);
-                            transition: 0.6s transform ease;
-                        }
-                    }
-
-                    &.rotate {
-                        a {
-                            &::after {
-                                transform: translateY(-50%) rotate(180deg);
-                            }
-                        }
-                    }
-                }
-
-                &>a {
-                    color: rgb(255 255 255 / 50%);
-                    transition: 0.3s all ease;
-                }
-
-                &:hover {
-                    ul.submenu {
-                        visibility: visible;
-                    }
-
-                    &>a {
-                        color: #fff;
-                    }
-                }
-
-                &.active {
-                    a {
-                        color: #fff;
-                    }
-
-                }
-            }
-        }
-
-        ul.submenu {
-            position: absolute;
-            visibility: hidden;
-            width: 11.9rem;
-
+      ul:not(.submenu) {
+        li {
+          a {
+            color: #000;
             @include tabletmin {
-                position: relative;
-                visibility: visible;
-                width: 100%;
-                display: none;
+              color: #fff;
             }
-
-            li {
-                a {
-                    padding: 1.4rem 1.8rem;
-                    background: #fff;
-                    color: #000;
-                    display: inline-block;
-                    width: 100%;
-                    line-height: 1;
-                    text-align: center;
-
-                    @include tabletmin {
-                        text-align: left;
-                        padding: 2rem;
-                    }
-                }
+          }
+          &.active {
+            a {
+              color: $primaryColor;
             }
+          }
+          &:hover {
+            a {
+              color: $primaryColor;
+            }
+          }
         }
-
-    }
-
-    .menu {
-        width: 4.0rem;
-        height: 4.0rem;
-        position: relative;
-        transition-duration: 1s;
-        display: none;
-        cursor: pointer;
-
+      }
+      ul.submenu {
+        li {
+          a {
+            color: #000000;
+          }
+        }
+      }
+      .primary-btn {
+        border-color: $accentColor;
+        color: #000;
+        &:hover {
+          color: #fff;
+        }
         @include tabletmin {
+          color: #fff;
+        }
+      }
+    }
+    .menu:not(.open) {
+      .icon {
+        background-color: #000;
+        &::after,
+        &::before {
+          background-color: #000;
+        }
+      }
+    }
+  }
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  figure {
+    &.logo {
+      a {
+        background-image: url(../images/intrc-white-logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13rem;
+        height: 5.5rem;
+        display: block;
+        z-index: 22;
+        position: relative;
+      }
+    }
+
+    flex-basis: 30%;
+    line-height: 1;
+
+    p {
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  nav {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: flex-end;
+
+    @include tabletmin {
+      position: fixed;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      flex-direction: column;
+      top: 0;
+      justify-content: flex-start;
+      padding: 10rem 1.2rem 0 1.2rem;
+      transition: 1s right ease;
+
+      ul {
+        flex-direction: column;
+
+        & > li {
+          margin: 0 !important;
+          width: 100%;
+          text-align: left;
+
+          &.client-portal {
+            & > a {
+              &::after {
+                right: 2rem !important;
+              }
+            }
+          }
+
+          a {
+            padding: 2rem;
             display: block;
+          }
+        }
+      }
+
+      .primary-btn {
+        align-self: center;
+        margin-top: 4rem;
+      }
+
+      &.show-nav {
+        display: flex;
+        right: 0%;
+      }
+    }
+
+    ul:not(.submenu) {
+      display: flex;
+      align-items: center;
+
+      & > li {
+        margin-right: 5.6rem;
+        position: relative;
+
+        &.client-portal {
+          & > a {
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 2rem;
+              height: 2rem;
+              right: -2rem;
+              background: url(../images/downward-arrow.png) no-repeat;
+              background-position: right center;
+              background-size: cover;
+              transform: translateY(-50%) rotate(0deg);
+              transition: 0.6s transform ease;
+            }
+          }
+
+          &.rotate {
+            a {
+              &::after {
+                transform: translateY(-50%) rotate(180deg);
+              }
+            }
+          }
         }
 
-        .icon {
-            height: 0.4rem;
-            width: 100%;
-            top: 50%;
-            background-color: #fff;
-            border-radius: 2.0rem;
-            position: absolute;
-            transition-duration: 0.5s;
-
-            &:before {
-                left: 0;
-                position: absolute;
-                top: -1.2rem;
-                height: 0.4rem;
-                width: 100%;
-                background-color: #fff;
-                content: "";
-                border-radius: 2.0rem;
-                transition-duration: 0.5s;
-
-            }
-
-            &:after {
-                left: 0;
-                position: absolute;
-                top: 1.2rem;
-                height: 0.4rem;
-                width: 100%;
-                background-color: #fff;
-                content: "";
-                border-radius: 2.0rem;
-                transition-duration: 0.5s;
-
-            }
+        & > a {
+          color: rgb(255 255 255 / 50%);
+          transition: 0.3s all ease;
         }
-    }
 
-    .burger2 {
-        .icon {
-            transition-duration: 0.5s;
-            transition-delay: 0.5s;
+        &:hover {
+          ul.submenu {
+            visibility: visible;
+          }
 
-            &:after {
-                transition: transform 0.5s, top 0.5s 0.5s;
-            }
-
-            &:before {
-                transition: transform 0.5s, top 0.5s 0.5s;
-            }
+          & > a {
+            color: #fff;
+          }
         }
+
+        &.active {
+          a {
+            color: #fff;
+          }
+        }
+      }
     }
 
-    .burger2.open .icon {
-        transition-duration: 0.1s;
-        transition-delay: 0.5s;
-        background: transparent;
+    ul.submenu {
+      position: absolute;
+      visibility: hidden;
+      width: 11.9rem;
+
+      @include tabletmin {
+        position: relative;
+        visibility: visible;
+        width: 100%;
+        display: none;
+      }
+
+      li {
+        a {
+          padding: 1.4rem 1.8rem;
+          background: #fff;
+          color: #000;
+          display: inline-block;
+          width: 100%;
+          line-height: 1;
+          text-align: center;
+
+          @include tabletmin {
+            text-align: left;
+            padding: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    transition-duration: 1s;
+    display: none;
+    cursor: pointer;
+
+    @include tabletmin {
+      display: block;
     }
 
-    .burger2.open .icon:before {
-        transition: top 0.5s, transform 0.5s 0.5s;
-        top: 0;
-        transform: rotateZ(-45deg);
-    }
+    .icon {
+      height: 0.4rem;
+      width: 100%;
+      top: 50%;
+      background-color: #fff;
+      border-radius: 2rem;
+      position: absolute;
+      transition-duration: 0.5s;
 
-    .burger2.open .icon:after {
-        transition: top 0.4s, transform 0.5s 0.5s;
-        top: 0;
-        transform: rotateZ(45deg);
+      &:before {
+        left: 0;
+        position: absolute;
+        top: -1.2rem;
+        height: 0.4rem;
+        width: 100%;
+        background-color: #fff;
+        content: "";
+        border-radius: 2rem;
+        transition-duration: 0.5s;
+      }
+
+      &:after {
+        left: 0;
+        position: absolute;
+        top: 1.2rem;
+        height: 0.4rem;
+        width: 100%;
+        background-color: #fff;
+        content: "";
+        border-radius: 2rem;
+        transition-duration: 0.5s;
+      }
     }
+  }
+
+  .burger2 {
+    .icon {
+      transition-duration: 0.5s;
+      transition-delay: 0.5s;
+
+      &:after {
+        transition: transform 0.5s, top 0.5s 0.5s;
+      }
+
+      &:before {
+        transition: transform 0.5s, top 0.5s 0.5s;
+      }
+    }
+  }
+
+  .burger2.open .icon {
+    transition-duration: 0.1s;
+    transition-delay: 0.5s;
+    background: transparent;
+  }
+
+  .burger2.open .icon:before {
+    transition: top 0.5s, transform 0.5s 0.5s;
+    top: 0;
+    transform: rotateZ(-45deg);
+  }
+
+  .burger2.open .icon:after {
+    transition: top 0.4s, transform 0.5s 0.5s;
+    top: 0;
+    transform: rotateZ(45deg);
+  }
 }

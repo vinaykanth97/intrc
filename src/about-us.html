@@ -21,7 +21,7 @@
       <!-- Banner -->
       @@include('./templates/inner-banner.html',{
       "title": "About us",
-      "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "description":"INTRC Consultants was created to stand out. The issues that our businesses face, as well as the possibilities that they pursue, are rapidly evolving.",
       bannerurl:"./images/banner-1.jpg"
       })
       <!--  -->
@@ -31,10 +31,10 @@
             <div class="flex align-center flex-mob-column">
                <div class="content">
                   <h2>Our mission</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                  <p>We welcome change and can assist you in expanding your business. This is why we've structured ourselves to provide more than just legal advice; we also assist you in finding global business solutions in a quality manner.</p>
                </div>
                <figure>
-                  <img src="./images/dummy-illus.jpg" alt="">
+                  <img src="./images/our-mission.svg" alt="">
                </figure>
             </div>
          </div>
@@ -46,31 +46,27 @@
             <div class="flex align-center reverse dark flex-mob-column">
                <div class="content">
                   <h2>Our vision</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                  <p>We intend to create a community of solution providers who help small businesses, startups, and entrepreneurs discover worldwide customers, investments, and create revenue by utilizing the necessary tools, technologies, and professionals.</p>
                </div>
                <figure>
-                  <img src="./images/dummy-illus.jpg" alt="">
+                  <img src="./images/our-vision.svg" alt="">
                </figure>
             </div>
          </div>
       </section>
       <!--  -->
       <!-- Our Values -->
-      <section class="section-space double-column our-values white-bg">
+      <section class="section-space double-column our-values white-bg ">
          <div class="wrapper">
-            <div class="flex align-center flex-mob-column">
-               <div class="content">
-                  <h2>Our Values</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-               </div>
-               <figure>
-                  <img src="./images/dummy-illus.jpg" alt="">
-               </figure>
-            </div>
+            <h2>Our Values</h2>
+            <p>By only obsessively learning and understanding our customers' concerns and difficulties can we successfully implement our innovative approach. We provide solutions that add real worth by supporting the growth of entrepreneurs and small scale businesses.</p>
+            <div class="three-tiled-flex flex ">
+               @@loop('./templates/three-tiled.html', "./templates/usa-business-data-works.json")
+             </div>
          </div>
       </section>
       <!-- Teams -->
-      <section class="section-space teams grey-bg">
+      <section class="section-space teams grey-bg d-none">
          <div class="wrapper">
             <h2>Team</h2>
             <div class="flex flex-mob-column">
