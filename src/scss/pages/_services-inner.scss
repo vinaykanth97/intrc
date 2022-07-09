@@ -1,6 +1,33 @@
-.services-inner{
-    .tiled-box{
+.services-inner {
+    .tiled-box {
         margin-bottom: 1.6rem;
         flex-grow: unset;
+    }
+
+    &.services-detail {
+        .hero-carousel {
+            h5 {
+                color: #fff;
+            }
+
+            .slider-content {
+                max-width: 80%;
+
+                input {
+                    padding: 2.1rem 2.4rem;
+                }
+
+                button {
+                    padding: 2.1rem 3.3rem;
+                }
+
+                .name {
+                    flex: 1;
+                }
+                .email{
+                    flex: 2;
+                }
+            }
+        }
     }
 }

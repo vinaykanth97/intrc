@@ -139,3 +139,6 @@ if (windowWidth <= 991) {
   let currentYear = getDate.getFullYear();
   $(".copyrights p .current-year").text(currentYear);
 })();
+
+
+// Calendly

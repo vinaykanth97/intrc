@@ -1,23 +1,23 @@
 .tab-items {
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
-    margin-bottom: 9rem;
-    @include tabletmin{
-        margin-bottom: 4.5rem;
-    }
+    margin-bottom: 4rem;
+
 
     ul {
         max-width: 60%;
         justify-content: space-between;
-        @include tabletmin{
-          text-align: center;
-          max-width: 100%;
+
+        @include tabletmin {
+            text-align: center;
+            max-width: 100%;
         }
     }
 
     li {
-        @include tabletmin{
+        @include tabletmin {
             margin: 0 0 2rem 0;
         }
+
         &.active {
             a {
                 border-bottom: 3px solid #FFFFFF;
@@ -34,11 +34,12 @@
 }
 
 .tab-content {
-    .double-column{
-        &.mt-104{
+    .double-column {
+        &.mt-104 {
             margin: 0;
         }
     }
+
     &>.content.show {
         display: block;
         animation: showTab 2s forwards;
