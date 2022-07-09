@@ -21,11 +21,21 @@
                     padding: 2.1rem 3.3rem;
                 }
 
-                .name {
-                    flex: 1;
+                fieldset {
+                    display: flex;
+                    flex-basis: 60%;
                 }
-                .email{
-                    flex: 2;
+
+                input {
+                    margin: 0 0.8rem 0 0;
+                }
+
+                .name {
+                    flex-basis: 30%;
+                }
+
+                .email {
+                    flex-basis: 70%;
                 }
             }
         }

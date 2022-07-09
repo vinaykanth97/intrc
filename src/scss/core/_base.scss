@@ -74,6 +74,9 @@ img {
 .d-none {
   display: none;
 }
+fieldset{
+  border: none;
+}
 @include tabletmin {
   .flex-mob-column {
     flex-direction: column;
