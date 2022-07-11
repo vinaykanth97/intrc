@@ -1,22 +1,22 @@
 [
     {
-        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
-        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "question": "How is a project's scope determined?",
+        "answer": "<p>During the initial consultation meetings, the project scope is most often decided based on the organization's strategic goals, constraints, and demographics. We normally advocate an evaluation phase at the start of a project to discuss complex issues.</p>",
         "data-id": "faq-1"
     },
     {
-        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
-        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "question": "What kinds of businesses do you work with?",
+        "answer": "<p>We have worked with too many industries and companies to mention them all. Our clients come in various sizes, from 2 to 200 people, from pre-launch start-ups to profitable businesses.</p>",
         "data-id": "faq-2"
     },
     {
-        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
-        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "question": "How much do you charge?",
+        "answer": "<p>First and foremost, our initial interaction with you is free to learn more about your company and establish our trustworthiness with you. We will then agree on a commercial rate with you. Generally, this is established on a charge proportionate to the solution provided.</p>",
         "data-id": "faq-3"
     },
     {
-        "question": "Lorem Ipsum is simply dummy text of the printing and typesetting industry ?",
-        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+        "question": "Why should you choose us?",
+        "answer": "<p>We are an experienced, vibrant, and professional group of individuals eager to work day and night for your brand. We've produced countless success stories by assisting brands in growing their businesses. We like our occupation so much that we are willing to go above and beyond to exceed our clients' aspirations.</p>",
         "data-id": "faq-4"
     }
 ]

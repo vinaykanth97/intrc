@@ -14,7 +14,7 @@
    <link href="css/style.min.css" rel="stylesheet" />
 </head>
 
-<body class="services-inner services-detail">
+<body class="services-inner">
    <!-- Header -->
    @@include('./templates/header.html',{
    "page": "services"
@@ -39,20 +39,19 @@
          <div class="content-position">
             <div class="wrapper">
                <div class="slider-content">
-                  <h1>US Small Business Solutions</h1>
+                  <h1>USA Business Setup</h1>
                   <p> Follow the prospects for business growth anywhere and everywhere they lead. Boundaries, regions,
                      and governments won't hinder the process of your worldwide expansion with our innovative solutions.
                   </p>
-                  <h5>Almost There! Just a Few Details So We Know Who to Share Your Google Rankings With.</h5>
-                  <form class="flex">
-                     <fieldset>
-                        <input type="text" placeholder="Name" class="name">
-                        <input type="email" placeholder="Email" class="email">
-                     </fieldset>
-                     <button href="javascript:void(0)" class="primary-btn schedule-call" type="submit">Submit</button>
 
-                  </form>
 
+                  <div class="down-arrow wrapper">
+                     <svg width="16" height="58" viewBox="0 0 16 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M9 1C9 0.447715 8.55228 -2.41411e-08 8 0C7.44772 2.41411e-08 7 0.447715 7 1L9 1ZM7.2929 57.7071C7.68342 58.0976 8.31658 58.0976 8.70711 57.7071L15.0711 51.3431C15.4616 50.9526 15.4616 50.3195 15.0711 49.9289C14.6805 49.5384 14.0474 49.5384 13.6569 49.9289L8 55.5858L2.34315 49.9289C1.95262 49.5384 1.31946 49.5384 0.928934 49.9289C0.53841 50.3195 0.53841 50.9526 0.928934 51.3431L7.2929 57.7071ZM7 1L7 57L9 57L9 1L7 1Z"
+                           fill="#fff" />
+                     </svg>
+                  </div>
                </div>
             </div>
          </div>
@@ -63,113 +62,32 @@
    <section class="section-space primary-bg tab-sec what-we-do">
       <div class="wrapper">
          <div class="tab-items">
-            <ul class="flex flex-mob-column">
-               <li class="active" data-id="services"><a href="javascript:void(0)">Services</a></li>
-               <li data-id="process"><a href="javascript:void(0)">Process</a></li>
-               <li data-id="how-it-works"><a href="javascript:void(0)">Package</a></li>
+            <ul class="flex flex-mob-column us-business-setup-tab">
+               <li class="active" data-id="how-it-works"><a href="javascript:void(0)">How it works</a></li>
+               <li data-id="process-services"><a href="javascript:void(0)">Process & services</a></li>
+               <!-- <li data-id="package"><a href="javascript:void(0)">Package</a></li> -->
             </ul>
          </div>
 
          <div class="tab-content">
 
-            <div class="content show" data-id="services">
-               <h2>Here To Give You “Effective Ideas”</h2>
-               <p class="para-space">We Provide the Best-in-class IT Support, Cloud Service, and Digital Marketing all
-                  around the United States.</p>
-               <div class="big-cards flex flex-mob-column">
-                  <div class="card">
-                     <figure>
-                        <img src="./images/website-development.svg" alt="Website Development">
-                     </figure>
-                     <h3>Website Development</h3>
-                     <p>With a design team that develops cutting-edge, efficient websites that capture your brand and
-                        optimize your income to support the expansion of your company.</p>
-                  </div>
-                  <div class="card">
-                     <figure>
-                        <img src="./images/search-engine-optimization.svg" alt="Search Engine Optimization">
-                     </figure>
-                     <h3>Search Engine Optimization</h3>
-                     <p>We invested heavily into increasing revenue for our clients, and we offer all the tools and
-                        services your company requires for SEO development.</p>
-                     <div class="exp-more">
-                        <a href="javascript:void(0)" class="arrowed-btn"><span><svg width="36" height="8"
-                                 viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M35.3536 4.35355C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464466C31.9763 0.269204 31.6597 0.269204 31.4645 0.464466C31.2692 0.659728 31.2692 0.976311 31.4645 1.17157L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53553C31.6597 7.7308 31.9763 7.7308 32.1716 7.53553L35.3536 4.35355ZM0 4.5H35V3.5H0V4.5Z"
-                                    fill="#000"></path>
-                              </svg>
-                           </span>Explore More</a>
-                     </div>
-                  </div>
-                  <div class="card">
-                     <figure>
-                        <img src="./images/social-media-management.svg" alt="Social Media Management">
-                     </figure>
-                     <h3>Social Media Management</h3>
-                     <p>Your company can begin increasing its brand exposure and income from social media with the help
-                        of our affordable social media management services.</p>
-
-                  </div>
-                  <div class="card">
-                     <figure>
-                        <img src="./images/ecommerce.svg" alt="ecommerce">
-                     </figure>
-                     <h3>Ecommerce</h3>
-                     <p>We build reliable and efficient Ecommerce platforms. We can construct whatever you can imagine.
-                        We specialize in tried-and-true e-commerce operations.</p>
-
-                  </div>
-                  <div class="card">
-                     <figure>
-                        <img src="./images/content-marketing.svg" alt="Content Marketing">
-                     </figure>
-                     <h3>Content Marketing</h3>
-                     <p>With the help of our content marketing services, streamline content marketing. Our content team
-                        creates, curates, evaluates, and promotes unique content.</p>
-
-                  </div>
-                  <div class="card">
-                     <figure>
-                        <img src="./images/branding-strategy.svg" alt="Branding & Strategy">
-                     </figure>
-                     <h3>Branding & Strategy</h3>
-                     <p>Our brand strategists have assisted innumerable businesses in rethinking and reorienting
-                        themselves, resulting in stronger relationships.</p>
-
-                  </div>
-                  <div class="card">
-                     <figure>
-                        <img src="./images/it-services.svg" alt="IT Services">
-                     </figure>
-                     <h3>IT Services</h3>
-                     <p>With our proactive assistance and technical assistance, you can accelerate the digital
-                        transformation of your business and achieve adaptability.</p>
-
-                  </div>
-                  <div class="card">
-                     <figure>
-                        <img src="./images/graphic-design.svg" alt="Graphic Design">
-                     </figure>
-                     <h3>Graphic Design</h3>
-                     <p>To conceptualize and produce a product, you must have a vision, be aware of your competitors,
-                        and start with a fantastic design.</p>
-
-                  </div>
-               </div>
-            </div>
-            <div class="content" data-id="process">
-               <h2>Package</h2>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.</p>
-               <div class="three-tiled-flex flex ">
-                  @@loop('./templates/three-tiled.html', "./templates/data-home-three-tiled.json")
-               </div>
-            </div>
-            <div class="content" data-id="how-it-works">
+            <div class="content show" data-id="how-it-works">
                <h2>How It Works</h2>
+               <p>The United States of America features the world's largest and most influential economy, as well as a prominent heritage and traditions, with a gross domestic product per capita that can exceed $23 trillion. Doing business in the United States is every entrepreneur's dream, but it can also present numerous challenges. But we believe doing business isn't easy, but it doesn't have to be hard. As a solution provider, we are proud to provide exceptional services.</p>
+               <div class="three-tiled-flex flex ">
+                  @@loop('./templates/three-tiled.html', "./templates/small-business-data-works.json")
+               </div>
+
+            </div>
+            <div class="content" data-id="process-services">
+               <h2>Process & Service</h2>
+               <p>With our one-of-a-kind solutions, you can achieve your dream in just a few simple steps:</p>
+               <div class="three-tiled-flex flex ">
+                  @@loop('./templates/three-tiled.html', "./templates/usa-business-process-data.json")
+               </div>
+            </div>
+            <!-- <div class="content" data-id="package">
+               <h2>Package</h2>
                <p>The United States of America features the world's largest and most influential economy, as well as a
                   prominent heritage and traditions, with a gross domestic product per capita that can exceed $23
                   trillion. Doing business in the United States is every entrepreneur's dream, but it can also present
@@ -179,7 +97,7 @@
                   @@loop('./templates/three-tiled.html', "./templates/usa-business-data-works.json")
                </div>
 
-            </div>
+            </div> -->
          </div>
       </div>
    </section>
@@ -193,7 +111,7 @@
          <p class="para-space">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
             type.</p>
-         @@loop('./templates/faqs.html', "./templates/data-faq-services.json")
+         @@loop('./templates/faqs.html', "./templates/usa-business-setup-data-faq.json")
       </div>
    </section>
    <!--  -->

@@ -47,5 +47,11 @@
         margin-top: 1.6rem;
         display: none;
         max-width: 90%;
+        ul{
+            padding: 0 0 0 2.6rem;
+            li{
+                list-style-type: disc;
+            }
+        }
     }
 }

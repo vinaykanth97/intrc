@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is SEO?",
+        "answer": "<p>Search Engine Optimization is the process of increasing a website's visibility on search engines by positioning it for related searches and queries. In addition, it manages to convince the consumer that you are the most trustworthy solution for them.</p>",
+        "data-id": "faq-1"
+    },
+    {
+        "question": "Why should I do SEO?",
+        "answer": "<p>SEO puts your business in front of the consumer who is actively searching for it on the internet. SEO is a good starting point if you want to boost the number of people who discover your business through search engines and increase your revenue.</p>",
+        "data-id": "faq-2"
+    },
+    {
+        "question": "How much does the SEO cost?",
+        "answer": "<p>SEO costs vary from business to business. Your distinctive marketplace, timeline objectives, and the amount of competition in your industry are all factors that might influence how much you should invest in SEO.</p>",
+        "data-id": "faq-3"
+    },
+    {
+        "question": "How long does it take to show results?",
+        "answer": "<p>The time it would take to appear at the top for one website against another might vary considerably. Nevertheless, the general rule of thumb is to hope to see successful outcomes in 3 - 6 months of SEO implementation.</p>",
+        "data-id": "faq-4"
+    }
+]

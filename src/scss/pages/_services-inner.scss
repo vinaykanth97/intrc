@@ -8,36 +8,83 @@
         .hero-carousel {
             h5 {
                 color: #fff;
+                margin: 0 0 1.6rem 0;
             }
 
             .slider-content {
                 max-width: 80%;
 
-                input {
-                    padding: 2.1rem 2.4rem;
+                .form-content {
+                    @include tabletmin {
+                        display: none;
+                    }
                 }
 
-                button {
-                    padding: 2.1rem 3.3rem;
+                @include tabletmin {
+                    max-width: 100%;
                 }
 
-                fieldset {
-                    display: flex;
-                    flex-basis: 60%;
-                }
 
-                input {
-                    margin: 0 0.8rem 0 0;
-                }
 
-                .name {
-                    flex-basis: 30%;
-                }
-
-                .email {
-                    flex-basis: 70%;
+                form {
+                    @include tabletmin {
+                        align-items: flex-start;
+                    }
                 }
             }
+        }
+
+        .form-content {
+            display: block;
+
+            input {
+                padding: 2.1rem 2.4rem;
+            }
+            form{
+                align-items: flex-start;
+            }
+            button {
+                padding: 2.1rem 3.3rem;
+
+                @include tabletmin {
+                    margin: 1.5rem 0 0 0;
+                }
+            }
+
+            fieldset {
+                display: flex;
+                flex-basis: 60%;
+
+                @include tabletmin {
+                    width: 100%;
+                }
+            }
+
+            input {
+                margin: 0 0.8rem 0 0;
+
+                @include tabletmin {
+                    margin: 0 0 0.5rem 0;
+                }
+            }
+
+            .name {
+                flex-basis: 30%;
+            }
+
+            .email {
+                flex-basis: 70%;
+            }
+        }
+    }
+}
+
+.tab-items {
+    .us-business-setup-tab {
+        max-width: 40%;
+
+        @include tabletmin {
+            max-width: 100%;
         }
     }
 }

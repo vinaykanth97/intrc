@@ -312,7 +312,7 @@
     row-gap: 1.6rem;
     column-gap: 1.6rem;
 
-  
+
     .card {
         flex-basis: 49%;
         background: #fff;
@@ -333,6 +333,15 @@
 
         .exp-more {
             margin: 2.4rem 0 0;
+        }
+    }
+}
+
+.tab-items {
+    .smal-bus-tabs {
+        max-width: 50%;
+        @include tabletmin{
+            max-width: 100%;
         }
     }
 }
