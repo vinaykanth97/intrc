@@ -34,7 +34,6 @@ if ($(".services").length > 0) {
   ScrollToDown("svg.down-arrow", ".headline-para");
   FaqAnswers();
   SelectTabs();
-  BannerCarousel();
 }
 if ($(".services-inner").length > 0) {
   ScrollToDown(".down-arrow svg", ".tab-sec");
@@ -142,3 +141,7 @@ if (windowWidth <= 991) {
 
 
 // Calendly
+$('.schedule-demo').on('click', function () {
+  Calendly.initPopupWidget({ url: 'https://calendly.com/intrc/intrc-meetup' });
+  return false;
+})
