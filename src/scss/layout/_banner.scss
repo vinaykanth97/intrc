@@ -8,6 +8,11 @@
     background-position: center;
     position: relative;
     padding: 0 0 6.5rem 0;
+
+    @include mobilemax {
+        background-position: 80% top;
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -24,13 +29,16 @@
         z-index: 23;
         position: relative;
         color: #fff;
-        @include tabletmin{
+
+        @include tabletmin {
             max-width: 100%;
         }
+
         svg {
             margin-top: 7.4rem;
             cursor: pointer;
             animation: inf-arrow 2s ease-in-out infinite;
+
             @keyframes inf-arrow {
                 0% {
                     transform: translate(0, -1.5rem);

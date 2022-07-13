@@ -73,6 +73,13 @@
 
         .field-spacings {
             margin-bottom: 5.4rem;
+            @include mobilemax{
+                flex-direction: column;
+                margin: 0;
+                input,textarea{
+                    margin: 0 0 4rem 0;
+                }
+            }
         }
     }
 }

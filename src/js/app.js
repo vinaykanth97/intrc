@@ -44,6 +44,10 @@ if ($(".services-inner").length > 0) {
 if ($(".contactus").length > 0) {
   ScrollToDown("svg.down-arrow", ".contact-form");
 }
+if ($('.services-list').length > 0) {
+  BannerCarousel();
+  ScrollToDown(".down-arrow svg", ".iconic-cards");
+}
 function ClientSwiper() {
   new Swiper(".client-partner-slider", {
     slidesPerView: 4,

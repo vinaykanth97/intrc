@@ -3,30 +3,32 @@
         <div class="flex flex-mob-column">
             <div class="about-contact">
                 <h2>Let’s work together</h2>
-                <p class="para-space">We believe that every business's needs are different. We create customized solutions tailored to your business requirements that expand your ability to conduct business to exceptional heights and even "To Infinity and beyond." </p>
+                <p class="para-space">We believe that every business's needs are different. We create customized
+                    solutions tailored to your business requirements that expand your ability to conduct business to
+                    exceptional heights and even "To Infinity and beyond." </p>
                 <a href="javascript:void(0)" class="primary-btn schedule-demo">Schedule Call</a>
                 <div class="contact-cred">
                     <p>Email Us</p>
-                    <h4><a href="mailto:username@companyname.com">username@companyname.com</a></h4>
+                    <h4><a href="mailto:info@intrc.us">info@intrc.us</a></h4>
                     <p>Call Us</p>
-                    <h4><a href="tel:(+123) 1234 5678">(+123) 1234 5678</a></h4>
+                    <h4><a href="tel:+1 (972) 372-9596">+1 (972) 372-9596</a></h4>
                 </div>
             </div>
             <div class="contact-field">
-                <h2>Contact us now to discuss 
+                <h2>Contact us now to discuss
                     your Business needs</h2>
                 <p class="para-space">Please complete this form to connect with us to explore customized solutions. </p>
-                <form>
+                <form action="send.php" method="post">
                     <div class="flex field-spacings">
-                        <input type="text" class="f-name form-control" placeholder="First Name" required>
-                        <input type="text" class="l-name form-control" placeholder="Last Name" required>
+                        <input type="text" name="fname" class="f-name form-control" placeholder="First Name" required>
+                        <input type="text" name="lname" class="l-name form-control" placeholder="Last Name" required>
                     </div>
                     <div class="flex field-spacings">
-                        <input type="email" class="email form-control" placeholder="Email" required>
-                        <input type="number" class="mobile form-control" placeholder="Mobile" required>
+                        <input type="email" name="email" class="email form-control" placeholder="Email" required>
+                        <input type="number" name="mobile" class="mobile form-control" placeholder="Mobile" required>
                     </div>
                     <div class="flex field-spacings">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment" required></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
                     </div>
                     <button type="submit" class="primary-btn modified">Submit</button>
                 </form>
