@@ -149,3 +149,24 @@ $('.schedule-demo').on('click', function () {
   Calendly.initPopupWidget({ url: 'https://calendly.com/intrc/intrc-meetup' });
   return false;
 })
+
+
+// Contact Form
+$(".contact-field form").on('submit', function (e) {
+  e.preventDefault();
+  $.ajax({
+    url: "contact_mail.php",
+    type: "POST",
+    data: new FormData(this),
+    contentType: false,
+    cache: false,
+    processData: false,
+    success: function (data) {
+      console.log('Mail Sent')
+    },
+    error: function (err) {
+      console.log('Mail failed')
+    }
+
+  });
+});
