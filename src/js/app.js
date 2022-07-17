@@ -154,8 +154,9 @@ $('.schedule-demo').on('click', function () {
 // Contact Form
 $(".contact-field form").on('submit', function (e) {
   e.preventDefault();
+  
   $.ajax({
-    url: "contact_mail.php",
+    url: "../contact_mail.php",
     type: "POST",
     data: new FormData(this),
     contentType: false,
